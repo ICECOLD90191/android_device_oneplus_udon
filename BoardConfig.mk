@@ -9,6 +9,18 @@ include device/oneplus/sm8450-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/oneplus/udon 
 
+# Vendor Interface - Allow Android 16 system with Android 13 vendor
+PRODUCT_ENFORCE_VINTF_MANIFEST := false
+
+# VNDK - Match vendor's Android 13 VNDK
+BOARD_VNDK_VERSION := 33
+
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 33
+
+# Allow vendor library mismatches
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := udon,OP5961L1,CPH2487
 
