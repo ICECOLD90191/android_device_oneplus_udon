@@ -4,6 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# API Level
+PRODUCT_SHIPPING_API_LEVEL := 33
+
+# Board platform
+PRODUCT_BOARD_PLATFORM := taro
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
