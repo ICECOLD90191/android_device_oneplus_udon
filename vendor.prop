@@ -1,0 +1,14 @@
+# Bluetooth
+bluetooth.device.default_name=OnePlus 11R
+
+# Graphics
+ro.surface_flinger.set_touch_timer_ms=0
+
+# USB
+vendor.usb.product_string=OnePlus 11R
+
+# Camera
+ro.vendor.oplus.camera.frontCamSize=16MP
+ro.vendor.oplus.camera.backCamSize=50MP+8MP+2MP
+ro.vendor.oplus.camera.isSupportExplorer=0
+ro.vendor.oplus.camera.isHasselbladCamera=0
