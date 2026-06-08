@@ -1,6 +1,14 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from OnePlus 11R (CPH2487_16.0.2.400(EX01)).
 
+# Missing Libs
+odm/lib64/libavutil.so
+odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
+odm/lib64/android.hardware.biometrics.common-V1-ndk_platform.so
+
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
 odm/etc/acdbdata/FTM/acdb_cal.acdb
@@ -50,8 +58,6 @@ odm/lib/rfsa/adsp/libaisr_skel.so
 # Audio
 odm/lib64/lib_lvacfs.so
 odm/lib64/liblvacfs_wrapper.so
-vendor/lib64/libmcs.so;DISABLE_CHECKELF
-vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
 
 # Audio firmware
 odm/firmware/tfa98xx.cnt
@@ -1023,7 +1029,6 @@ odm/lib64/libAncHumBokeh.so
 odm/lib64/libAncHumBokehPost.so
 odm/lib64/libAncHumVideoBase.so
 odm/lib64/libAncHumanDoubleExposure.so
-odm/lib64/libAncHumanRetain.so
 odm/lib64/libAncHumanSegFigureFusion.so
 odm/lib64/libAncSegBaseSdk.so
 odm/lib64/libAncSegMultiSdk.so
@@ -1150,7 +1155,7 @@ odm/lib64/libarcsoft_super_night_raw.so
 odm/lib64/libarcsoft_triple_sat.so;DISABLE_CHECKELF
 odm/lib64/libarcsoft_supervideostabilization.so
 odm/lib64/libarcsoft_triple_zoomtranslator.so;DISABLE_CHECKELF
-odm/lib64/libarcsoft_turbo_fusion_raw_grf.so
+odm/lib64/libarcsoft_turbo_fusion_raw_grf.so;FIX_SONAME
 odm/lib64/libarcsoft_turbo_fusion_raw_portrait_super_night.so
 odm/lib64/libarcsoft_turbo_fusion_raw_super_night.so
 odm/lib64/libarcsoft_turbo_hdr_raw.so
@@ -1160,15 +1165,10 @@ odm/lib64/libarcsoft_ultra_high_dynamic_range.so
 odm/lib64/libarcsoft_videoautozoom.so;FIX_SONAME
 odm/lib64/libcalculator.so
 odm/lib64/libcalculator_htp.so
-odm/lib64/libc++_shared.so
-odm/lib64/libcdm_metrics_protos.so
-odm/lib64/libcdm_protos.so
 odm/lib64/libcreatebin.so
 odm/lib64/libcustomer_halalgovisual.so
 odm/lib64/libcvface_api.so
 odm/lib64/libdeccfg_sp.so
-odm/lib64/libdlbdsservice_sp.so
-odm/lib64/libdlbpreg_sp.so
 odm/lib64/libdualcam_optical_zoom_control.so
 odm/lib64/libdualcam_video_optical_zoom.so
 odm/lib64/libeffect_custom.so
@@ -1189,13 +1189,11 @@ odm/lib64/liboplusblur_capture_api.so
 odm/lib64/liboptical_zoom_dc.so
 odm/lib64/liboptical_zoom_vs.so
 odm/lib64/libormshalclient.so
-odm/lib64/libosenseaidlhalclient.so
 odm/lib64/libpngwrapper.so
 odm/lib64/libportrait_repair_ocl.so
 odm/lib64/libportrait_repair_ppl3_ocl.so
 odm/lib64/libremosaic_wrapper.so
-odm/lib64/libremosaiclib_s5k3p9.so
-odm/lib64/librfapis.so
+odm/lib64/libremosaiclib_s5k3p9.so;FIX_SONAME
 odm/lib64/librmsclib1.so
 odm/lib64/librpmbengclient.so
 odm/lib64/libsaveshaderbin.so
@@ -1211,7 +1209,7 @@ odm/lib64/libthirdcapability.so
 odm/lib64/libtriplecam_optical_zoom_control.so
 odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/libwatermark_photo.so
-odm/lib64/libwrapper_te.so
+odm/lib64/libwrapper_te.so;FIX_SONAME
 odm/lib64/libyuv2.so
 odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so
 odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so
@@ -1412,10 +1410,7 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libcv_common.so
-vendor/lib64/libeva.so
 vendor/lib64/libhdr10plus.so
-vendor/lib64/libhdr_stub.so
 vendor/lib64/libhwconfigurationutil.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
@@ -1431,7 +1426,6 @@ vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
-vendor/lib64/libnanopb.so
 vendor/lib64/libolc_vnd.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libopencv.so
 vendor/lib64/libopencv3a.so
@@ -1541,15 +1535,10 @@ vendor/firmware/evautil64.mdt
 vendor/firmware/gmu_gen70000.bin
 
 # Fingerprint - from OnePlus 11R (CPH2487_16.0.2.400(EX01))
--odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl.xml
+odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl.xml
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
-odm/lib64/android.hardware.biometrics.common-V1-ndk_platform.so
-odm/lib64/libolc_vnd.so
-odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:system_ext/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
-odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so
+
 
 # Fingerprint firmware
 odm/vendor/firmware/uff_jv.b00
@@ -1741,12 +1730,9 @@ odm/etc/sensor/sensor_light_para.json
 vendor/lib64/sensors.ssc.so
 
 # TouchStack
-odm/bin/hw/vendor-oplus-hardware-touch-V2-service
-odm/bin/touchDaemon
 odm/etc/init/init.touchDaemon.rc
 odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
 odm/lib64/vendor.oplus.hardware.touch-V2-ndk_platform.so
--odm/etc/vintf/manifest/manifest_touch_aidl.xml
 
 # VPU firmware
 vendor/firmware/vpu20_1v.mbn

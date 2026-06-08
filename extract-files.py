@@ -74,6 +74,46 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/sensors.ssc.so': blob_fixup()
         .binary_regex_replace(b'qti.sensor.wise_light', b'android.sensor.light\x00')
         .sig_replace('EA D3 84 52 01 41 00 91 29 00 17 CB 29 41 00 D1 29 15 C9 93 4A 3F A0 72', 'AA 00 80 52 01 41 00 91 29 00 17 CB 29 41 00 D1 29 15 C9 93 0A 00 A0 72'),
+    (
+        'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff',
+        'vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64',
+        'vendor/lib64/camx.provider@2.6-legacy.so',
+        'vendor/lib64/camx.device@3.4-ext-impl.so',
+        'vendor/lib64/camx.provider@2.4-external.so',
+        'vendor/lib64/camx.provider@2.4-legacy.so',
+        'vendor/lib64/camx.provider@2.4-impl.so',
+        'vendor/lib64/camx.device@3.5-ext-impl.so',
+        'vendor/lib64/camx.provider@2.5-legacy.so',
+        'vendor/lib64/camx.provider@2.7-legacy.so',
+        'vendor/lib64/camx.provider@2.5-external.so',
+        'vendor/lib64/camx.device@3.6-ext-impl.so',
+	'odm/bin/touchDaemon'
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'odm/lib64/libAlgoProcess.so': blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V6-ndk.so', 'android.hardware.graphics.common-V7-ndk.so')
+        .replace_needed('android.hardware.graphics.common-V2-ndk_platform.so', 'android.hardware.graphics.common-V2-ndk.so')
+        .replace_needed('android.hardware.graphics.common-V2-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
+    ('odm/lib64/libarc_eis.so', 'odm/lib64/camera/components/com.oplus.node.eispreview.so', 'odm/lib64/camera/components/com.oplus.node.eisrecord.so'): blob_fixup()
+        .add_needed('libc++_shared.so'),
+    (
+        'odm/lib64/libHIS.so',
+        'odm/lib64/libOGLManager.so',
+        'odm/lib64/libOPAlgoCamFaceBeautyCap.so'
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
+    'odm/lib64/libarcsoft_high_dynamic_range_v4.so': blob_fixup()
+        .clear_symbol_version('remote_handle_close')
+        .clear_symbol_version('remote_handle_invoke')
+        .clear_symbol_version('remote_handle_open')
+        .clear_symbol_version('remote_register_buf_attr')
+        .clear_symbol_version('remote_register_buf'),
+    ('odm/lib64/libarcsoft_dual_sat.so', 'odm/lib64/libarcsoft_dual_zoomtranslator.so', 'odm/lib64/libarcsoft_triple_sat.so', 'odm/lib64/libarcsoft_triple_zoomtranslator.so'): blob_fixup()
+        .add_needed('libc++_shared.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
