@@ -3,11 +3,8 @@
 
 # Missing Libs
 odm/lib64/libavutil.so|051fc6e33ce365178074b4a3d9aeb74e6df94270
-odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so|185778822f29a84e8a6e84e29ff5fd47170a83c3
-odm/lib64/vendor.oplus.hardware.touch-V1-ndk_platform.so|3e1659574ed75be91dc8e3802a5a7583d7b2572b
 odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so|720d84b2112849af89bd0495767bb03c79a39557
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so|af66646b979f26b6869321b6cf5c16f9d13f7cd9
-odm/lib64/android.hardware.biometrics.common-V1-ndk_platform.so|ee5ca8984d099bd44c482b0dbaf647a943cbe120
 
 # ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt|d2a141cb1c228906c8ebf52f2e9f8a046bd524f8
