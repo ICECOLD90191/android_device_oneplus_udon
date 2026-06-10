@@ -1722,11 +1722,6 @@ odm/etc/sensor/sensor_config.json|6572d28e45ea47b3bbc51516c94c199ea738f780
 odm/etc/sensor/sensor_light_para.json|e6f80cf247c21d9419d2d15a8cb9dc7e654316f3
 vendor/lib64/sensors.ssc.so|c73f24f984df6d6a98ef3bcde9ce8a69402db998|9e947256233525c80f29c842f02a6da9667cf332
 
-# TouchStack
-odm/etc/init/init.touchDaemon.rc|f46064b8ecadf59fdd58ccdb8200f884739255c8
-odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc|05de56dc4879c2cca3eebdc5716b03165c6aaf1f
-odm/lib64/vendor.oplus.hardware.touch-V2-ndk_platform.so|cf206e201aaebc1bf097d019ce8b303a02212ede
-
 # VPU firmware
 vendor/firmware/vpu20_1v.mbn|c346c60498d85dab5e50439b915d2b1769701067
 vendor/firmware/vpu20_1v_unsigned.mbn|0e9fe4b794472a9850209befae0b5b5581e6fda6
