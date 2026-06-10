@@ -55,10 +55,16 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so',
         'odm/lib64/libextensionlayer.so',
         'odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so',
+		'odm/lib64/camera/com.qti.sensor.udon_imx890.so',
+		'odm/lib64/camera/com.qti.sensor.udon_s5k3p9.so',
+		'odm/lib64/camera/com.qti.sensor.udon_ov08d10.so',
+		'odm/lib64/camera/com.qti.sensor.udon_ov02b.so',
+		'odm/lib64/camera/com.qti.sensor.udon_imx890_sunny.so',
         'vendor/lib64/com.qti.feature2.mfsr.so',
         'vendor/lib64/com.qti.feature2.rtmcx.so',
         'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so',
         'vendor/lib64/libcamxcommonutils.so',
+		'vendor/lib64/libcamximageformatutils.so',
         'vendor/lib64/com.qti.feature2.gs.sm8350.so',
         'vendor/lib64/com.qti.feature2.rt.so',
         'vendor/lib64/com.qualcomm.mcx.distortionmapper.so',
@@ -116,6 +122,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/com.qti.feature2.gs.sdm865.so',
     ): blob_fixup()
         .replace_needed('vendor.oplus.hardware.osense.client-V1-ndk_platform.so', 'vendor.oplus.hardware.osense.client-V1-ndk.so')
+        .replace_needed('vendor.oplus.hardware.commondcs-V1-ndk_platform.so', 'vendor.oplus.hardware.commondcs-V1-ndk.so')
         .replace_needed('vendor.oplus.hardware.performance-V1-ndk_platform.so', 'vendor.oplus.hardware.performance-V1-ndk.so'),
     'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
         .regex_replace('SystemCamera = 0;  0;  0;  1;  0;  1;', 'SystemCamera = 0;  0;  0;  0;  0;  0;'),
@@ -158,7 +165,8 @@ blob_fixups: blob_fixups_user_type = {
     'odm/lib64/libAlgoProcess.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V6-ndk.so', 'android.hardware.graphics.common-V7-ndk.so')
         .replace_needed('android.hardware.graphics.common-V2-ndk_platform.so', 'android.hardware.graphics.common-V2-ndk.so')
-        .replace_needed('android.hardware.graphics.common-V2-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
+        .replace_needed('android.hardware.graphics.common-V2-ndk.so', 'android.hardware.graphics.common-V7-ndk.so')
+	    .replace_needed('vendor.oplus.hardware.osense.client-V1-ndk_platform.so', 'vendor.oplus.hardware.osense.client-V1-ndk.so'),
     ('odm/lib64/libarc_eis.so', 'odm/lib64/camera/components/com.oplus.node.eispreview.so', 'odm/lib64/camera/components/com.oplus.node.eisrecord.so'): blob_fixup()
         .add_needed('libc++_shared.so'),
     (
