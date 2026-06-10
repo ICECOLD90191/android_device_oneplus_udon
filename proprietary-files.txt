@@ -1534,11 +1534,10 @@ vendor/firmware/evautil64.b08|92211b58ff65abd044f8beb46eaf72843551767b
 vendor/firmware/evautil64.mdt|2c6dc89bf28832b3fe1112d3a4b4f3d93b0f3d63
 vendor/firmware/gmu_gen70000.bin|1ac8d9dd3d405f84c915a4562ff72d244e10bcbd
 
-# Fingerprint - from OnePlus 11R (CPH2487_16.0.2.400(EX01))
-odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl.xml|00d3047561c19783dff8cc2b9a3ee07e9ac8daff
-odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff|dff513b54092241b9dc838f403ada7c317f8f378|f42778595ad0b6b13b99dc629e3adb34940ebbf9
+# Fingerprint (service) - from salami 11.F.68
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff|0ded362198f669f38239f52c3bc526eaf55aca12|0ded362198f669f38239f52c3bc526eaf55aca12
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|c9f6b44fe71d532f87475d3c6a601bd2b14fb2f8
-
+odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v2.xml|9dd836cdef719daf48d5bce7ff1fa5cfeeba78f2
 
 # Fingerprint firmware
 odm/vendor/firmware/uff_jv.b00|fbdb5e29bb76e00e8079da11c00dfd21ed54d5f7
