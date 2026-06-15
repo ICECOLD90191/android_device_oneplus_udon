@@ -21,6 +21,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
     $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
 
+# Alert slider
+PRODUCT_PACKAGES += \
+    KeyHandler \
+    tri-state-key-calibrate
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2772
 TARGET_SCREEN_WIDTH := 1240
@@ -29,15 +34,19 @@ TARGET_SCREEN_WIDTH := 1240
 PRODUCT_SYSTEM_PROPERTIES += \
     sys.brightness.disable_gamma_conversion=true
 
-# IR
-#PRODUCT_COPY_FILES += \
-#    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
+#  IR
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.consumerir.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.ir-service.oplus
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
+    KeyHandlerResTarget \
     OPlusFrameworksResTarget \
     OPlusSettingsResTarget \
     OPlusSettingsProviderResTarget \
