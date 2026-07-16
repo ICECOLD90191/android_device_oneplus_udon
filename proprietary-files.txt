@@ -1514,6 +1514,21 @@ vendor/firmware/gmu_gen70000.bin
 vendor/etc/display/qdcm_calib_data_tianma_nt37705_dsc_cmd_mode_panel.json
 vendor/etc/ltm_config_tianma_nt37705_dsc_cmd_mode_panel.xml
 
+# Face unlock
+odm/lib64/libstfaceunlockocl.so
+
+# Face unlock firmware
+odm/vendor/firmware/facereg.b00
+odm/vendor/firmware/facereg.b01
+odm/vendor/firmware/facereg.b02
+odm/vendor/firmware/facereg.b03
+odm/vendor/firmware/facereg.b04
+odm/vendor/firmware/facereg.b05
+odm/vendor/firmware/facereg.b06
+odm/vendor/firmware/facereg.b07
+odm/vendor/firmware/facereg.b08
+odm/vendor/firmware/facereg.mdt
+
 # Fingerprint - from OnePlus 12R (CPH2585_16.0.5.1301(EX01))
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff|6b2984ccdea5e5c1d63c29b9c9356bd66b6cf9fd|8b9307d0e54869f8e84689e16423527c916acf2d
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|c9f6b44fe71d532f87475d3c6a601bd2b14fb2f8
