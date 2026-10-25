@@ -3,15 +3,11 @@
 
 # Missing Libs
 odm/lib64/libavutil.so|051fc6e33ce365178074b4a3d9aeb74e6df94270
-odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so|720d84b2112849af89bd0495767bb03c79a39557
-odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so|af66646b979f26b6869321b6cf5c16f9d13f7cd9
+odm/lib64/libvasapi.so
 
 # ACDB
-odm/etc/acdbdata/Audio_Parameter_Version.txt|d2a141cb1c228906c8ebf52f2e9f8a046bd524f8
-odm/etc/acdbdata/FTM/acdb_cal.acdb|5b55a550f3af78944bd6163af531354170f236cb
-odm/etc/acdbdata/FTM/workspaceFileXml.qwsp|0dcc5a70d2dea47e5bf9b56d9f8331a97092f061
-odm/etc/acdbdata/MOS/acdb_cal.acdb|329b219e36a450b397e038a7c9d0ec48bb0af821
-odm/etc/acdbdata/acdb_cal.acdb|ba3e7cc112ad8a9aead66e80adc1bd585744bf76
+odm/etc/acdbdata/Audio_Parameter_Version.txt
+odm/etc/acdbdata/acdb_cal.acdb;SYMLINK=vendor/etc/acdbdata/waipio_mtp/acdb_cal.acdb
 
 # ADSP modules
 odm/lib/rfsa/adsp/QNN_lib/libQnnHtpV69Skel.so|c2e9555ac10dd8bd03a297f007f94958bd5e0dd2
@@ -1209,12 +1205,11 @@ odm/lib64/libwatermark_photo.so|d0e9c1ffe36f7bffcd103f49122913097f1b6517
 odm/lib64/libwrapper_te.so;FIX_SONAME|22bd134df7d364ef6836d3e253b55e006c5697d4|a05bf91f7058e9ab07aeb6c1631e6239ba226847
 odm/lib64/libyuv2.so|120a7fe2bccfce7b00895c8295f5060c5695e7b5|745a7e72cf4ca6f0c7e7b67f5b4554e2b6459cd6
 odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so|616317d4c6bd8da7fcb42372af0905554e6b68ce|bc0029450621c8e72900fd72b8e2f209a19561ee
-odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so|ffabe26e2bd18f98b4656925451d45afa3afaf5e
+# odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so|ffabe26e2bd18f98b4656925451d45afa3afaf5e built from source 
 odm/lib64/vendor.oplus.hardware.engcamera@1.0.so|9e9705c0290f2a6f51a9f10378e8527c8da47eef
 odm/lib64/vendor.oplus.hardware.extcamera@1.0.so|3eeee741813e11174bff087bece6c5cd0c2c70fd
 odm/lib64/vendor.oplus.hardware.orms@1.0.so|cd1c7c5fff01cb5cabb19c87264ab7b76a1fd83e
 odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so|b55494e952c704f0a2961bda008ac01f1d62d2ea|d0fa3e7f62990c5070d19ab0862403b19cbb821e
-odm/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so|f4dc7249193b94f212d60ac8467bbba0e82bfc03
 vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64|415fc8b9e9b0f48ef5680d8a0b055ec90fe1c6a7|b2d14c155b7f77b84d0e487ba26164447b7b9a9f
 vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc|c01f36bf777f350886e2e7f46c1fcdcc9affdf32
 vendor/lib64/camera/arcsoft_calibration_uw.bin|d96dfd77dd933f3c6c1e76edbf941bad116c2579
@@ -1438,10 +1433,9 @@ vendor/lib64/libsynx.so|d8784645879985d8df97fbc23b2241364cea1012
 vendor/lib64/libtfestriping.so|fcd912fb3dd19bfd66a98dba96836f58722c43b3
 vendor/lib64/libthreadutils.so|11e201b21bd48610c68d86efeedd1ef1077256ad
 vendor/lib64/libubifocus.so|71b1fc2c887209b726521d9d61547fc928a06b0b
-vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so|2bde2da24d2a2ac65dd5900a1a3dab8c55ff4bde
-vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so;MODULE_SUFFIX=_vendor|ffabe26e2bd18f98b4656925451d45afa3afaf5e
-vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so|926548b95414d73bff48efcc075176e93fdc5a41
-vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so|b22043dd38b6247d8f7716873690563557605aff
+# vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so|2bde2da24d2a2ac65dd5900a1a3dab8c55ff4bde removed built from source
+# vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so;MODULE_SUFFIX=_vendor|ffabe26e2bd18f98b4656925451d45afa3afaf5e removed built from source
+vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so|926548b95414d73bff48efcc075176e93fdc5a41 
 vendor/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform.so|0117573113e92e2d76d99ba9368e598c4cbb56a6
 vendor/lib64/vendor.qti.hardware.camera.aon@1.0-service-impl.so|00a54f35249d48107cc0717addb7f713e9bdcf4d|2fe76f9d6104f8fd8485fd393705ad2550b59946
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|5dbe2074632c11da88d43a8c15519b2a66fbfae8|d3f329b6a74a264fb9f652f8f2403aa7a9a4d529

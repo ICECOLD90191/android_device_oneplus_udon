@@ -56,7 +56,8 @@ $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH)\
+    hardware/oplus
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8450-common/common.mk)

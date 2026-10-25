@@ -7,5 +7,7 @@
 
     <!-- The Enrollment Progress bar for UDFPS sensor in pixels -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">103</integer>
-
+     <!-- Disable biometric sensors (Goodix UDFPS HAL from OOS12 incompatible with A16 AIDL) -->
+    <string-array name="config_biometric_sensors" translatable="false">
+    </string-array>
 </resources>
