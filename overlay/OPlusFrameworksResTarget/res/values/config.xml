@@ -445,10 +445,9 @@
          Note that a physical cutout should be configured in pixels for the best results.
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 154,83
-        M 111,83
-        A 43,43 0 1,0 197,83
-        A 43,43 0 1,0 111,83
+        M 586,74
+        A 34,34 0 1,0 654,74
+        A 34,34 0 1,0 586,74
         Z
         @left
     </string>
@@ -460,10 +459,10 @@
          config_mainBuiltInDisplayCutout
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
-        M 0,0
-        H 236
-        V 152
-        H 0
+        M 586,0
+        H 654
+        V 108
+        H 586
         Z
         @left
     </string>
@@ -479,11 +478,5 @@
          non-zero. -->
     <integer name="config_defaultPeakRefreshRate">120</integer>
 
-    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
-    <integer-array name="config_udfps_sensor_props" translatable="false" >
-        <item>720</item>  <!-- <item>sensorLocationX</item> -->
-        <item>2944</item> <!-- <item>sensorLocationY</item> -->
-        <item>124</item>  <!-- <item>sensorRadius</item> -->
-    </integer-array>
 
 </resources>
