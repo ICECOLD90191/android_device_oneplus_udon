@@ -55,6 +55,14 @@ odm/lib/rfsa/adsp/libaisr_skel.so
 odm/lib64/lib_lvacfs.so
 odm/lib64/liblvacfs_wrapper.so
 
+# Audio configs
+odm/etc/mixer_paths.xml
+odm/etc/mixer_paths.xml:vendor/etc/audio/sku_cape/mixer_paths_waipio_mtp.xml;TRYSRCFIRST
+odm/etc/resourcemanager.xml
+odm/etc/resourcemanager.xml:vendor/etc/audio/sku_cape/resourcemanager_waipio_mtp.xml;TRYSRCFIRST
+odm/etc/usecaseKvManager.xml
+odm/etc/usecaseKvManager.xml:vendor/etc/usecaseKvManager.xml;TRYSRCFIRST
+
 # Audio firmware
 odm/firmware/tfa98xx.cnt
 

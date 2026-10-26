@@ -76,6 +76,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/camx.provider@2.7-legacy.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/etc/audio/sku_cape/resourcemanager_waipio_mtp.xml': blob_fixup()
+        .regex_replace('<speaker_protection_enabled>1</speaker_protection_enabled>', '<speaker_protection_enabled>0</speaker_protection_enabled>'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'),
 }  # fmt: skip
