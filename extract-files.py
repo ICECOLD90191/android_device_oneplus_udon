@@ -25,8 +25,13 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
+    'odm/bin/hw/vendor-oplus-hardware-touch-V2-service': blob_fixup()
+        .replace_needed('vendor.oplus.hardware.touch-V2-ndk_platform.so', 'vendor.oplus.hardware.touch-V2-ndk.so'),
     ('odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service', 'vendor/lib64/libmidasserviceintf_aidl.so'): blob_fixup()
         .replace_needed('android.frameworks.stats-V1-ndk_platform.so', 'android.frameworks.stats-V1-ndk.so'),
+    'odm/bin/touchDaemon': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
+        .replace_needed('vendor.oplus.hardware.touch-V2-ndk_platform.so', 'vendor.oplus.hardware.touch-V2-ndk.so'),
     'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
         .regex_replace('SystemCamera =  0;  0;  0;  1;  0;  1;', 'SystemCamera =  0;  0;  0;  0;  0;  1;'),
     (

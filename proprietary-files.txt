@@ -1565,6 +1565,25 @@ odm/etc/sensor/config/waipio_qrd_oplus_smart_prox.json
 odm/etc/sensor/sensor_config.json
 odm/etc/sensor/sensor_light_para.json
 
+# Touch
+odm/bin/hw/vendor-oplus-hardware-touch-V2-service
+odm/bin/touchDaemon
+odm/etc/init/init.touchDaemon.rc
+odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
+odm/etc/vintf/manifest/manifest_touch_aidl.xml
+
+# Touchscreen firmware
+odm/firmware/tp/22803/FW_S3910_TIANMA.img
+odm/firmware/tp/22803/FW_S3910_TIANMA_FAE.img
+odm/firmware/tp/22803/FW_S3910_TIANMA_HBP.img
+odm/firmware/tp/22803/FW_S3910_TIANMA_HBP_FAE.img
+odm/firmware/tp/22803/FW_S3910_TIANMA_sys_edge_touch_config.img
+odm/firmware/tp/22803/LIB_S3910_TIANMA_HBP.so
+odm/firmware/tp/22803/LIMIT_S3910_TIANMA.img
+odm/firmware/tp/22803/LIMIT_S3910_TIANMA_AGING.img
+odm/firmware/tp/22803/LIMIT_S3910_TIANMA_HBP.img
+odm/firmware/tp/22803/sys_edge_touch_config.xml
+
 # UFS
 odm/firmware/ufs/MICRON-MT128GAXAT2U31.bin
 odm/firmware/ufs/MICRON-MT256GAXAT4U31.bin
