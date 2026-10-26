@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_udon.mk
+    $(LOCAL_DIR)/custom_udon.mk
