@@ -1514,6 +1514,33 @@ vendor/firmware/gmu_gen70000.bin
 vendor/etc/display/qdcm_calib_data_tianma_nt37705_dsc_cmd_mode_panel.json
 vendor/etc/ltm_config_tianma_nt37705_dsc_cmd_mode_panel.xml
 
+# Fingerprint
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
+odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
+odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl.xml
+
+# Fingerprint firmware
+odm/vendor/firmware/uff_jv.b00
+odm/vendor/firmware/uff_jv.b01
+odm/vendor/firmware/uff_jv.b02
+odm/vendor/firmware/uff_jv.b03
+odm/vendor/firmware/uff_jv.b04
+odm/vendor/firmware/uff_jv.b05
+odm/vendor/firmware/uff_jv.b06
+odm/vendor/firmware/uff_jv.b07
+odm/vendor/firmware/uff_jv.b08
+odm/vendor/firmware/uff_jv.mdt
+odm/vendor/firmware/uff_spi.b00
+odm/vendor/firmware/uff_spi.b01
+odm/vendor/firmware/uff_spi.b02
+odm/vendor/firmware/uff_spi.b03
+odm/vendor/firmware/uff_spi.b04
+odm/vendor/firmware/uff_spi.b05
+odm/vendor/firmware/uff_spi.b06
+odm/vendor/firmware/uff_spi.b07
+odm/vendor/firmware/uff_spi.b08
+odm/vendor/firmware/uff_spi.mdt
+
 # Graphics (Adreno firmware)
 vendor/firmware/a730_sqe.fw
 vendor/firmware/a730_zap.b00
