@@ -1514,10 +1514,10 @@ vendor/firmware/gmu_gen70000.bin
 vendor/etc/display/qdcm_calib_data_tianma_nt37705_dsc_cmd_mode_panel.json
 vendor/etc/ltm_config_tianma_nt37705_dsc_cmd_mode_panel.xml
 
-# Fingerprint
-odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
-odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
-odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl.xml
+# Fingerprint - from OnePlus 12R (CPH2585_16.0.5.1301(EX01))
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff|6b2984ccdea5e5c1d63c29b9c9356bd66b6cf9fd|8b9307d0e54869f8e84689e16423527c916acf2d
+odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|c9f6b44fe71d532f87475d3c6a601bd2b14fb2f8
+odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v2.xml|9dd836cdef719daf48d5bce7ff1fa5cfeeba78f2
 
 # Fingerprint firmware
 odm/vendor/firmware/uff_jv.b00

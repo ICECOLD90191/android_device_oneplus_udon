@@ -28,10 +28,9 @@ blob_fixups: blob_fixups_user_type = {
     'odm/bin/hw/vendor-oplus-hardware-touch-V2-service': blob_fixup()
         .replace_needed('vendor.oplus.hardware.touch-V2-ndk_platform.so', 'vendor.oplus.hardware.touch-V2-ndk.so'),
     'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff': blob_fixup()
-        .replace_needed('android.hardware.biometrics.common-V1-ndk_platform.so', 'android.hardware.biometrics.common-V1-ndk.so')
-        .replace_needed('android.hardware.biometrics.fingerprint-V1-ndk_platform.so', 'android.hardware.biometrics.fingerprint-V1-ndk.so')
-        .replace_needed('vendor.oplus.hardware.touch-V1-ndk_platform.so', 'vendor.oplus.hardware.touch-V1-ndk.so')
-        .add_needed('libshims_aidl_fingerprint_v1.oplus.so'),
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
+        .replace_needed('vendor.oplus.hardware.commondcs-V1-ndk.so', 'vendor.oplus.hardware.commondcs-V1-ndk_platform.so')
+        .add_needed('libshims_aidl_fingerprint_v2.oplus.so'),
     ('odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service', 'vendor/lib64/libmidasserviceintf_aidl.so'): blob_fixup()
         .replace_needed('android.frameworks.stats-V1-ndk_platform.so', 'android.frameworks.stats-V1-ndk.so'),
     'odm/bin/touchDaemon': blob_fixup()
