@@ -8,4 +8,37 @@
     <!-- Whether to enable framework dimming for UDFPS -->
     <bool name="config_udfpsFrameworkDimming">true</bool>
 
+    <!-- Brightness-to-alpha lookup table for UDFPS framework dimming, taken from the
+         OplusFingerPrint feature in stock multimedia_display_feature_config.xml -->
+    <string-array name="config_udfpsDimmingBrightnessAlphaArray" translatable="false">
+        <item>0,242</item>
+        <item>4,242</item>
+        <item>388,235</item>
+        <item>539,234</item>
+        <item>730,232</item>
+        <item>825,230</item>
+        <item>1071,224</item>
+        <item>1335,221</item>
+        <item>1719,216</item>
+        <item>1905,215</item>
+        <item>2187,209</item>
+        <item>2517,203</item>
+        <item>2821,192</item>
+        <item>3100,181</item>
+        <item>3486,172</item>
+        <item>3841,159</item>
+        <item>4239,148</item>
+        <item>4511,141</item>
+        <item>4983,133</item>
+        <item>5349,122</item>
+        <item>5711,109</item>
+        <item>6101,98</item>
+        <item>6403,93</item>
+        <item>6699,87</item>
+        <item>6982,79</item>
+        <item>7353,64</item>
+        <item>8000,48</item>
+        <item>10000,48</item>
+    </string-array>
+
 </resources>
