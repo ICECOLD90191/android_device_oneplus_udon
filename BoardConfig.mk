@@ -13,6 +13,7 @@ DEVICE_PATH := device/oneplus/udon
 TARGET_SCREEN_DENSITY := 480
 
 # Properties
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
