@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
     android.hardware.ir-service.oplus
 
 # OplusParts
-$(call inherit-product, packages/apps/OplusParts/oplusparts.mk)
+#$(call inherit-product, packages/apps/OplusParts/oplusparts.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
